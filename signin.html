@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jalikoa_upload_new_product</title>
+</head>
+<link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+<link rel="stylesheet" href="./assets/css/styles.css">
+<link rel="stylesheet" href="./assets/css/sigincss.css">
+<body>
+  <header>
+  <div class="logo">
+    <p><span>Jalikoa</span></p>
+  </div>
+  <div class="others_plus_not">
+    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" stroke="rgba(96,96,96,0.1)" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/> <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.55-.45-1-1-1s-1 .45-1 1v.68C7.64 5.36 6 7.93 6 11v5l-2 2v1h16v-1l-2-2z" fill="#000"/>
+</svg></span>
+    <span class="profDet">
+      
+    </span>
+  </div>
+</header>
+<form action="signin.php" method="" enctype="">
+  <div class="container">
+  
+  
+<div class="maain">
+    <h5>Welcome back</h5>
+  <div class="input_container">
+    <span>Email:</span>
+    <input type="email" name="email" id="email" placeholder="Email" required></div>
+      <div class="input_container">
+    <span>Password:</span>
+    <input type="password" name="password" id="password" placeholder="Password" required><span onclick="show1()">👁</span>
+     <div id="errorDiv1">
+      Password should be atleast 6 characters
+    </div>
+    <div id="messDiv1">
+      &#10003;&nbsp;Password meets length requirement
+    </div>
+  </div>
+  <center><div id="mess">
+    <div id="">
+      
+    </div>
+    <div id="">
+      
+    </div>
+  </div></center>
+  <center><input style="width:80px;margin-top:10px;" class="addproduct fa-beat" type="submit" value="sign in"></center>
+  </form>
+  <center><p class="signnav fa-shake">Or <a href="signup.html">Sign up</a></p></center>
+</div>
+</form>
+  </div>
+  <footer id="footerr">
+    <span><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#78B518"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" /></svg></span>
+  <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#78B518"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" /></svg></span>
+</footer>
+</body>
+<script src="./assets/js/loginHandler.js"></script>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Payment page</title>
+</head>
+<link rel="stylesheet" href="./assets/css/styles.css">
+<link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+<style>
+     .payment-main {
+          width:500px;
+          padding:10px 10px; 
+          margin-top:60px;
+          background: #f2f2f1;         
+     }
+     .payment-main h4 {
+          color:rgb(32,48,200);
+          font-size:22px;
+          font-weight:600;
+          margin:10px 0px;
+          text-align: center;
+     }
+     .payment-main p {
+          color:rgb(32,48,200);
+          font-size:15px;
+          font-weight:600;
+          margin:10px 0px;
+          opacity:0.7;
+     }
+
+     .payment-main .payment-product-card h3 {
+          margin:10px 10px;
+          color:rgb(2, 126, 2);
+          font-size: 20px;
+          font-weight: 400;
+     }
+     .payment-main .payment-product-card del{
+          font-size: 14px;
+          opacity:0.9;
+          margin:2px 10px;
+          color:#444;
+     }
+     .payment-main .payment-product-card span {
+          color:#f53192;
+          font-size: 18px;
+          margin:2px 10px;
+     }
+
+     .payment-main .payment-product-card button {
+          padding:5px 15px;
+          display: flex;
+          align-items:center;
+          justify-content: space-around;
+          margin:20px 10px;
+          border:1px solid #333;
+          color:#333;
+          min-width: 100px;
+          border-radius:10px;
+          font-size: 16px;
+          font-weight: 500;
+          background:transparent;
+     }
+     .payment-main .payment-product-card .payment-option {
+          position:relative;
+          border:1px solid #33333398;
+          border-radius:3px;
+          margin-bottom: 250px;
+     }
+     .payment-main .payment-product-card .payment-option:hover .payment-methods {
+          display: block;
+     }
+     .payment-methods:hover {
+          display:block;
+     }
+     .payment-methods {
+          position:absolute;
+          top:42px;
+          left:0px;
+          background: #fff;
+          z-index: 2;
+          width:100%;
+          display: none;
+     }
+     .payment-option .accordion-expand {
+          display:flex;
+          align-items: center;
+     }
+     .payment-option .payment-methods .payment-method-card {
+          display:flex;
+          align-items: center;
+          padding:10px 10px;
+     }
+     .payment-option .payment-methods .payment-method-card:hover {
+          background-color: rgba(96,96,96,.1);
+          border-left:5px solid rgb(253, 145, 3);
+          padding:10px 5px;
+     }
+     .payment-main .payment-product-card button img,.payment-method-card img {
+          max-width: 20px;
+          margin:0px 10px;
+     }
+     /*For the image do some research on js on how to change the image background from the current color to any color that is desired or on how to remove the background*/
+     .payment-main .payment-product-card img {
+          max-width:300px;
+          border-radius:5px;
+          object-fit: cover;
+     }
+
+</style>
+<body>
+     <div class="payment-main">
+          <h4>Pay and own now</h4>
+          <p>Quantity in stock: 20</p>
+          <div class="payment-product-card">
+
+               <h3>Product : Mens fashion Trouser </h3>
+               <img src="./assets/img/1000052137.jpg" alt="">
+               <p><del>Ksh:1500</del><span>Ksh:1200</span></p>
+               <div class="payment-option">
+                    <div class="accordion-expand">
+                         <span>Choose the payment option</span>
+                         <img src="./assets/svgs/arrow_drop_down_39dp_000000_FILL0_wght200_GRAD0_opsz40.svg" alt="">
+                    </div>
+
+                    <div class="payment-methods">
+
+
+                         <div class="payment-method-card">
+                              <img src="./assets/svgs/credit_card_39dp_000000_FILL0_wght200_GRAD0_opsz40.svg" alt=""><span>credit card</span>
+                         </div>
+
+                         <div class="payment-method-card">
+                              <img src="./assets/svgs/credit_card_39dp_000000_FILL0_wght200_GRAD0_opsz40.svg" alt=""><span>Union Pay</span>
+                         </div>
+                         <div class="payment-method-card">
+                              <img src="./assets/svgs/apps_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Mpesa</span>
+                         </div>
+                         <div class="payment-method-card">
+                              <img src="./assets/svgs/contacts_product_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Paypal</span>
+                         </div>
+                         <div class="payment-method-card">
+                              <img src="./assets/svgs/send_money_39dp_000000_FILL0_wght200_GRAD0_opsz40.svg" alt=""><span>PesaPal</span>
+                         </div>
+                    </div>
+               </div>
+               <button class="fa-beat"><img src="./assets/svgs/send_money_39dp_000000_FILL0_wght200_GRAD0_opsz40.svg">Pay now</button>
+          </div>
+
+     </div>
+</body>
+</html>

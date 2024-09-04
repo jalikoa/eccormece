@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Jalsoft signup</title>
+</head>
+<link rel="stylesheet" href="./assets/css/styles.css">
+<link rel="stylesheet" href="./assets/css/all.css">
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+<body>
+    <div class="reg-main">
+
+
+   <form class="reg-form" action="" method="post" enctype="multipart/form-data">
+          <div class="reg-box">
+               <h3 >Sign up</h3>
+               <div class="reg-inputs">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <label for="username">Name</label>
+                    <input type="text" id="username" placeholder="Username" required>
+                    <label for="contact">Phone</label>
+                    <input type="number" id="contact" placeholder="Phone no" required>
+                    <label for="location">Your pin code</label>
+                    <input type="number" id="location" placeholder="40223 KADONGO" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <label for="profpic">Profile Picture</label>
+                    <input type="file" accept="image/png,image/jpeg,image/jpg,image/gif" id="profpic" required>
+                    <div id="profpicdiv">
+
+                    </div>
+                    
+               </div>
+
+                    <button class="reg-button fa-beat primary-button" onclick="validateCredAndSend()">Register</button>
+          </div>
+   </form> 
+          
+          <div class="on-pc">
+               <img src="./assets/img/" alt="">
+          </div>
+
+     </div>
+
+<script src="./assets/js/registerhandler.js"></script>
+</body>">
+</html>

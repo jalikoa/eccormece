@@ -1,0 +1,108 @@
+#sidebar {
+    width:295px;
+    overflow-y: auto;
+    position:fixed;
+    top:60px;
+    left:0px;
+    max-height: 84vh;
+    background: #f2f2f1;
+}
+#sidebar::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+#sidebar:hover::-webkit-scrollbar,#sidebar:active::-webkit-scrollbar {
+    width:10px;
+    background:#9999999c;
+    border-radius: 2em;
+}
+#sidebar:hover::-webkit-scrollbar-thumb,#sidebar:active::-webkit-scrollbar-thumb{
+    width:1opx;
+    background:rgba(10, 39, 102, 0.589);
+    border-radius: 3px;
+}
+#sidebar:hover::-webkit-scrollbar-button, #sidebar:active::-webkit-scrollbar-button{
+    -webkit-appearance: push-button;
+    cursor:pointer;
+}
+#sidebar .main-sidebar-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding:10px 15px;
+    width:auto;
+    background:transparent;
+    margin-bottom: 55px;
+}
+.sidebar-opt {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:15px 10px;
+    width:100%;
+    margin:10px 0px;
+    border-radius: 10em;
+    background-color: #fff;
+    transition:all 0.3s ease;
+    cursor:pointer;
+    margin:3px 0px;
+}
+.sidebar-opt-active{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:15px 10px;
+    width:100%;
+    margin:10px 0px;
+    border-top-right-radius: 10em;
+    border-bottom-right-radius: 10em;
+    border-left:8px solid #ff8800;
+    background-color: #e4e1e1;
+    transition:all 0.3s ease;
+    cursor:pointer;
+    margin:3px 0px;    
+}
+.sidebar-opt:hover {
+    background:rgba(25, 28, 26, 0.05);
+    
+}
+.sidebar-opt a ,.sidebar-opt-active a{
+    text-decoration: none;
+    color:rgb(10, 39, 102);
+    margin:0px 10px;
+    font-size:18px;
+    font-weight: 600;
+}
+.acc-logo {
+    padding:3px 3px;
+    margin:5px 0px;
+    color:rgb(10, 39, 102);
+    margin:0px 10px;
+    font-size:18px;
+    font-weight: 600;
+    cursor:pointer; 
+}
+@media screen and (max-width:500px){
+    #sidebar{
+         display:none;
+    }
+    #main-body{
+         margin-left:0;
+    }
+    #onpc{
+         display:none;
+    }
+}
+@media screen and (min-width:500px){
+    #onmobile{
+         display:none;
+    }
+}
+#onpc {
+    text-align: center;
+    height:100%;
+    width:100%;
+    font-size: 18px;
+    font-weight: 600;
+    color:rgb(10, 39, 102);
+}
